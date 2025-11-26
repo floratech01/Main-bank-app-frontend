@@ -86,7 +86,8 @@ jobs:
         git add bank-project/frontend.yaml
         git status
         git commit -m "Update frontend image to version ${{ github.run_number }}"
-        git push origin main
+        git push origin main || echo "No changes to commit"
+      
 
 
   # Continues-Update_k8s_manifest:
