@@ -73,8 +73,8 @@ jobs:
     - name: Update image tag in frontend.yaml
       run: |
         cd kubernetes-manifests
-        sed -i "s|744531146604.dkr.ecr.us-east-1.amazonaws.com/bank-frontend:.*|744531146604.dkr.ecr
-        .us-east-1.amazonaws.com/bank-frontend:${{ github.run_number }}|g" ./bank-project/frontend.yaml
+        sed -i "s|744531146604.dkr.ecr.us-east-1.amazonaws.com/bank-frontend:.*|744531146604.dkr.ecr.us-east-1.amazonaws.com/bank-frontend:5|g" ./bank-project/frontend.yaml
+
         
         # Verify the change
         echo "Updated frontend.yaml:"
