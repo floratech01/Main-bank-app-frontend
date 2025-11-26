@@ -8,6 +8,7 @@ on:
   # pull_request:
   #   branches:
   #     - cicd
+  workflow_dispatch:
 
 jobs:
   Continues-Integration_build_and_push:
@@ -17,7 +18,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: digitalwitchdemo/main_bank_app_frontend
+        repository: floratech01/Main-bank-app-frontend
         ref: main
 
 
